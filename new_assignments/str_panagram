@@ -1,0 +1,12 @@
+# finding the string whether it is a panagram or not
+"""
+def panagram(string):
+    alphabet_set=set('abcdefghijklmnopqrstuvwxyz')
+    
+    is_input=set(string.lower())
+    
+    return alphabet_set.issubset(is_input)
+    
+    
+string="Gojo is the ceo of dripple"
+print(panagram(string))

@@ -1,0 +1,15 @@
+# sum of the elements in the list
+from functools import reduce
+def sum_list(list1):
+    s=0
+    for x in list1:
+        s=s+x
+    print(s)
+    list2=[]
+    list2.append(s)
+    print("the sum of the list elements is:",list2)
+list1=[1,2,3,4,5]
+sum_list(list1)
+
+res=reduce(lambda x,y:x+y,list1)
+print("the sum of the list is:",res)
